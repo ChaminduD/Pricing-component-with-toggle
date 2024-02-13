@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: hsl(240, 78%, 98%);
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: -36px;
+    right: -194px;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/bg-top.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    pointer-events: none;
+    z-index: -1;
+}
+header{
+    margin-top: 64px;
+}
+h1{
+    text-align: center;
+    color: hsl(233, 13%, 49%);
+    margin-bottom: 16px;
+}
+.plan{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(234, 14%, 74%);
+}
+.toggle-container{
+    display: inline-block;
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width: 56px;
+    height: 32px;
+    position: relative;
+    border-radius: 20px;
+    margin: 24px;
+    cursor: pointer;
+}
+.toggle-container:hover{
+    background: hsla(236, 72%, 79%, 0.7);
+}
+#toggle{
+    display: none;
+}
+#toggle:checked + .toggle-slider{
+    transform: translateX(-24px);
+}
+.toggle-slider{
+    display: inline-block;
+    background-color: hsl(0, 0%, 100%);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: transform 0.4s;
+}
+main{
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    margin: 32px 0 52px;
+}
+section{
+    background-color: hsl(0, 0%, 100%);
+    padding: 34px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px hsla(234, 13%, 49%, 0.092);
+}
+section:nth-child(2){
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    margin: 30px 0;
+    box-shadow: none;
+}
+section:nth-child(2) h2{
+    color: hsl(0, 0%, 100%);
+}
+section:nth-child(2) p{
+    color: hsl(0, 0%, 100%);
+}
+section:nth-child(2) hr{
+    border-color: hsla(0, 0%, 100%, 0.3);
+}
+section:nth-child(2) ul li{
+    color: hsl(0, 0%, 100%);
+}
+section:nth-child(2) button{
+    background: hsl(0, 0%, 100%);
+    color: hsl(237, 63%, 64%);
+}
+section:nth-child(2) button:hover{
+    background: transparent;
+    border: 1px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+section h2{
+    font-size: 18px;
+    color: hsl(233, 13%, 49%);
+    margin-bottom: 18px;
+}
+section p{
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(232, 13%, 33%);
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+section p span{
+    font-size: 40px;
+    padding-right: 8px;
+}
+section .annually{
+    display: none;
+}
+section ul li{
+    list-style-type: none;
+    padding: 16px 0;
+    font-size: 15px;
+    color: hsl(233, 13%, 49%);
+}
+hr{
+    border: 1px solid hsla(234, 14%, 74%, 0.3);
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 14px 0;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    margin: 30px 0 0;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background: transparent;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(237, 63%, 64%);
+    text-decoration: none;
+}
+
+@media only screen and (min-width:600px){
+    body::before{
+        top: 0;
+        right: 0;
+        background-position: right top;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width:980px){
+    
+    body::after{
+        content: '';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/bg-bottom.svg');
+        background-repeat: no-repeat;
+        pointer-events: none;
+        z-index: -1;
+        background-position: left bottom;
+    }
+    header{
+        margin-top: 40px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+    }
+    section{
+        width: 350px;
+        margin-top: 4px;
+        padding-bottom: 32px;
+    }
+    section:nth-child(2){
+        margin: 0;
+        padding: 58px 30px 54px;
+    }
+    button{
+        margin-top: 30px;
+    }
+}
