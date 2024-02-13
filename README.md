@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-toggle-using-mobilefirst-workflow-LQ87U8K38b)
+- Live Site URL: [Add live site URL here](https://chamindud.github.io/Pricing-component-with-toggle/)
 
 ## My process
 
