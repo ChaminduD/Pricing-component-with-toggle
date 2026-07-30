@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-toggle-using-mobilefirst-workflow-LQ87U8K38b)
-- Live Site URL: [Live site URL here](https://chamindud.github.io/Pricing-component-with-toggle/)
+- Live Site URL: [Live site URL here](https://chmndu.github.io/Pricing-component-with-toggle/)
 
 ## My process
 
@@ -91,5 +91,5 @@ I'm looking to improve my CSS & JavaScript knowledge to design more unique and n
 
 ## Author
 
-- Frontend Mentor - [@ChaminduD](https://www.frontendmentor.io/profile/ChaminduD)
+- Frontend Mentor - [@chmndu](https://www.frontendmentor.io/profile/chmndu)
 - LinkedIn - [Chamindu Dahanayaka](https://www.linkedin.com/in/chamindudahanayaka/)
